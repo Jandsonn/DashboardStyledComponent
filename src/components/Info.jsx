@@ -40,17 +40,20 @@ function Info() {
 }
 
 const InfoCard = styled.div `
-    height:95%;
+    height:100%;
     width: 14rem;
     background-color: white;
     border-radius: 0.4rem;
     padding: 1rem;
     color:white;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
     box-shadow: ${ CardShadow }
     transition: 0.4s ease-int-out;
     &:hover {
         box-shadow: ${ hoverEffect }
+    }   
+    @media scree and (min-width: 30px) and (max-width: 1080px){
+        width: 80%;
     }
 
 `;
@@ -59,9 +62,7 @@ const Card = styled.div `
     backgrounf-color: rgba(183, 194, 243, 0.3);
     border-radius: 0.4rem;
     margin-bottom: 1rem;
-    cursor: pointer;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);  
 `;
 
 const CardContent = styled.div `

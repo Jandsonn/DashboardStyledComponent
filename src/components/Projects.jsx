@@ -23,7 +23,7 @@ function Projects() {
                 </Avatar>
                 <Detail>
                     <Title>Here you will find what you are looking for :D</Title>
-                    <SubTitle> 5 days remaining</SubTitle>
+                    <SubTitle> 10 days  January 2022</SubTitle>
                 </Detail>
             </Project>
              <AllProjects>See all projects</AllProjects>
@@ -40,11 +40,14 @@ const YourProjects = styled.div`
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     box-shadow: ${ CardShadow }
     transition: 0.4s ease-int-out;
-    cursor:pointer;
     &:hover {
         box-shadow: ${ hoverEffect }
     }
-
+    @media scree and (min-width: 30px) and (max-width: 1080px){
+        height: max-content;
+        margin-top: 1rem;
+        width: 75%;
+    }
 `;
 
 const Project = styled.div`
@@ -69,6 +72,9 @@ const Detail = styled.div`
 
 const Title = styled.h3`
     font-weight: 500;
+    @media scree and (min-width: 30px) and (max-width: 1080px){
+        font-size: 1rem;
+    }
 `;
 
 const SubTitle = styled.h5 `

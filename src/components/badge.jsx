@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import {themeColor} from '../utils' 
 
-function Badge({ content, glow = false, paid=false, late=false }){
+function Badge({ content, clean=false, glow = false, paid=false, late=false }){
     return (
-    <Div glow = {glow} paid={paid} late={late} >
+    <Div glow = {glow} paid={paid} late={late} clean={false}>
         {content}
     </Div>
     );
@@ -17,6 +17,20 @@ const Div = styled.div `
     color:white;
     background-color: ${themeColor};
     cursor:pointer;
+   
+   
+    ${({clean}) => 
+    clean && 
+        `
+        color: ${themeColor};
+        border: 0.5rem solid ${themeColor};
+        background-color: transparent;
+    `}
+   
+   
+   
+   
+   
     ${({glow}) => 
     glow && 
         `
@@ -24,7 +38,7 @@ const Div = styled.div `
         padding: 0.2rem 0.5rem;
         font-weight:normal;
         color: #2f233d;
-        background-color: rgba(109, 134, 245, 0.192)
+        background-color: rgba(109, 134, 245, 0.192);
     
     `}
         ${({ paid }) =>

@@ -20,27 +20,21 @@ function Earnings() {
 }
 
 const EarningsCard = styled.div`
-    height: 95%;
+    height: 100%;
     width: 14rem;
     background-color:${themeColor};
     padding: 1rem;
     border-radius: 1rem;
     color: white;
-    transition: 0ms.4s ease-in-out;
-  
-    box-shadow: ${ CardShadow }
-    transition: 0.4s ease-int-out;
+    transition: 0.4s ease-in-out;
     &:hover {
         box-shadow: ${ hoverEffect }
     }
-    {
-        background-color: #89babd;
-        border-radius: 5px;
-        cursor: pointer;
-        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    
+    @media scree and (min-width: 30px) and (max-width: 1080px){
+        width: 80%;
     }
 `;
-
 
 const CardContent = styled.div`
     margin: 1rem;

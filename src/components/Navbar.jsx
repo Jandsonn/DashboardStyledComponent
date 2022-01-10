@@ -26,6 +26,12 @@ const NavbarContainer = styled.nav`
     justify-content: space-between;
     align-items: center;
     height: 10%;
+    @media screen and (min-widht: 320px) and (max-width: 1080px){
+        flex-direction: column;
+        margin-bottom: 1rem;
+
+      }
+    
 `;
 
 const Text = styled.h1 `
@@ -33,6 +39,10 @@ const Text = styled.h1 `
         font-weight: 500;
         color: #484258;
     } 
+    @media screen and (min-widht: 320px) and (max-width: 1080px){
+        margin-top: 1rem;
+      }
+    
 `; 
 const InputContainer = styled.div `
     display:flex;

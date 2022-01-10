@@ -52,6 +52,11 @@ const Container =  styled.div `
     flex-direction: column;
     align-items: center; 
     gap: 3rem;
+    @media screen and (min-widht: 320px) and (max-width: 1080px){
+        width: 100%;
+        height: max-content !important
+      }
+    
 `;
 
 const ProfileContainer =  styled.div `
@@ -80,7 +85,7 @@ const LinksContainer = styled.div`
     background-color: ${darkThemeColor}
     height: 100%;
     width: 100%;
-    border-radius: 3rem;
+    border-radius: 1rem;
 `;
 
 const Links = styled.ul`
@@ -88,7 +93,7 @@ const Links = styled.ul`
     display: flex;
     flex-direction: column;
     padding-top: 2rem;
-    height: 70%;
+    height: 60%;
 
 `;
 
@@ -112,14 +117,14 @@ const Link = styled.li`
 
 const ContactContainer = styled.div `
     width: 60%;
-    background-color: #091322;
+    background-color: #091312;
     color: #c4c4c4;
     height: 15%;
     margin: auto auto;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 1.9rem;
 
     a {
         color:white;
