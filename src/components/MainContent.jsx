@@ -4,6 +4,9 @@ import Earnings from "./Earnings";
 import Navbar from "./Navbar";
 import Info from "./Info";
 import Projects from './Projects';
+import Invoices from "./Invoices";
+
+
 
 function MainContent(){
     return (
@@ -22,7 +25,10 @@ function MainContent(){
             </SectionOne>
             <SectionTwo>
                 <ColumnOne2>
-                  
+                  <InvoiceContainer>
+                     <TitleText>Recent Invoices</TitleText>
+                     <Invoices />
+                  </InvoiceContainer>
                 </ColumnOne2>
                 <ColumnTwo2></ColumnTwo2>
             </SectionTwo>
@@ -75,6 +81,9 @@ const ColumnOne1 = styled.div `
 `;
 
 const ColumnOne2 = styled.div ``;
+const InvoiceContainer = styled.div`
+    height: 60%;
+`;
 const ColumnTwo1 = styled.div `
     display: flex;
     flex-direction: column;

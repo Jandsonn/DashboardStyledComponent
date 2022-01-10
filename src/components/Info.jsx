@@ -46,6 +46,7 @@ const InfoCard = styled.div `
     border-radius: 0.4rem;
     padding: 1rem;
     color:white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     box-shadow: ${ CardShadow }
     transition: 0.4s ease-int-out;
     &:hover {

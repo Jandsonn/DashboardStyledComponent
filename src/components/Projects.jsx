@@ -37,6 +37,7 @@ const YourProjects = styled.div`
     margin: 0;
     padding: 1rem;
     border-radius: 0.4rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     box-shadow: ${ CardShadow }
     transition: 0.4s ease-int-out;
     cursor:pointer;
