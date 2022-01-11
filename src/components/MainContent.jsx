@@ -7,6 +7,8 @@ import Projects from "./Projects";
 import Invoices from "./Invoices";
 import JoinSlack from "./JoinSlack";
 import ProjectRecommendation from "./ProjectRecommendation";
+import Sidebar from "./Sidebar";
+
 
 function MainContent() {
   return (
