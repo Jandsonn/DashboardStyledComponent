@@ -17,11 +17,11 @@ const Container =  styled.div `
   display: flex;
   height: 97vh;
   background: linear-gradient(to bottom right, white 0%, #b6b9ff 70%);
-  border-radius: 1rem;
+  border-radius: 0.7rem;
   @media screen and (min-widht: 320px) and (max-width: 1080px){
     flex-direction: column;
   }
-
+  
 `;
 
 export default App;

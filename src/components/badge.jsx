@@ -18,17 +18,13 @@ const Div = styled.div `
     background-color: ${themeColor};
     cursor:pointer;
    
-   
     ${({clean}) => 
     clean && 
         `
         color: ${themeColor};
-        border: 0.5rem solid ${themeColor};
+        border:0.05rem solid ${themeColor};
         background-color: transparent;
     `}
-   
-   
-   
    
    
     ${({glow}) => 

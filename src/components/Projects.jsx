@@ -36,12 +36,12 @@ const YourProjects = styled.div`
     background-color: white;
     margin: 0;
     padding: 1rem;
-    border-radius: 0.4rem;
+    border-radius: 0.7rem;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     box-shadow: ${ CardShadow }
     transition: 0.4s ease-int-out;
     &:hover {
-        box-shadow: ${ hoverEffect }
+        box-shadow: ${ hoverEffect };
     }
     @media scree and (min-width: 30px) and (max-width: 1080px){
         height: max-content;
@@ -62,8 +62,6 @@ const Avatar = styled.div`
         width: 4rem;
         border-radius: 4rem;
     }
-
-
 `;
 
 const Detail = styled.div`
@@ -71,7 +69,7 @@ const Detail = styled.div`
 `;
 
 const Title = styled.h3`
-    font-weight: 500;
+    font-weigth: 500;
     @media scree and (min-width: 30px) and (max-width: 1080px){
         font-size: 1rem;
     }
@@ -86,6 +84,5 @@ const AllProjects = styled.h5`
     color: ${themeColor}
 
 `;
-
 
 export default Projects;

@@ -24,7 +24,7 @@ const EarningsCard = styled.div`
     width: 14rem;
     background-color:${themeColor};
     padding: 1rem;
-    border-radius: 1rem;
+    border-radius: 0.7rem;
     color: white;
     transition: 0.4s ease-in-out;
     &:hover {
@@ -51,7 +51,7 @@ const Chart = styled.div`
 
 const EarningsText = styled.h3 `
     text-align: center;
-    font-wight: normal;
+    font-weight: normal;
     padding: 0.4rem 0; 
 `;
 
@@ -61,7 +61,7 @@ const Earning = styled.h2`
 
 const EarningsIncrease = styled.h5 `
     text-align:center;
-    font-wight: normal;
+    font-weight: normal;
     background-color rgba(0, 0, 0, 0.2);
     padding: 0.5rem;
     border-radius: 2rem;

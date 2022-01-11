@@ -43,7 +43,7 @@ const InfoCard = styled.div `
     height:100%;
     width: 14rem;
     background-color: white;
-    border-radius: 0.4rem;
+    border-radius: 0.7rem;
     padding: 1rem;
     color:white;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
@@ -76,8 +76,8 @@ const Row = styled.div `
     ${({ justify }) => 
         justify &&
     `
-    justify-content:space-around;
-    width:90%;
+    justify-content: space-around;
+    width: 90%;
     
     `}
 `;
