@@ -56,6 +56,7 @@ const Container = styled.div`
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     width: 100%;
     height: max-content !important;
+    
   }
 `;
 
@@ -64,25 +65,27 @@ const ProfileContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
 `;
 
 const Avatar = styled.img`
   height: 7rem;
   border-radius: 3.5rem;
-  margin-top: 20%;
+  margin-top: 15%;
 `;
 
 const Name = styled.h1`
   color: white;
   font: 1.5rem;
   font-weight: 400;
-  margin: 0.8rem 0 0.5rem 0;
+  margin: 5.9rem 0 0.5rem 0;
 `;
 
 const LinksContainer = styled.div`
     background-color: ${darkThemeColor};
     height: 100%;
     width: 100%;
+    text-align:center;
     border-radius: 0.7rem;
 `;
 
@@ -95,8 +98,9 @@ const Links = styled.ul`
 `;
 
 const Link = styled.li`
-  margin-left: 25%;
-  margin-bottom: 2rem;
+  margin-right: 3.5rem;
+  width:100%;
+  margin-bottom: 3.3rem;
   display: flex;
   gap: 1rem;
   color: #e4e4e4;
@@ -108,6 +112,10 @@ const Link = styled.li`
   svg {
     font-size: 1.1rem;
     margin-top: 3%;
+    margin-left: 1.8rem;
+  }
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    margin-bottom: 2rem;
   }
 `;
 

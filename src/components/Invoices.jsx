@@ -118,6 +118,7 @@ const Container = styled.div`
     gap: 0.6rem;
   }
 `;
+
 const Price = styled.div``;
 
 export default Invoices;

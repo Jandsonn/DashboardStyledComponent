@@ -99,7 +99,7 @@ const Title = styled.h1 `
 
 const SubTitle = styled.h5 `
     color:#333333;
-    font-wight: normal;
+    font-weight: normal;
 `;
 
 
